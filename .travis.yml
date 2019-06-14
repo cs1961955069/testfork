@@ -6,7 +6,6 @@ go:
   - 1.10.1
 
 before_install:
-  - pyenv local 3.6 2.7
   - sudo apt-get install python3-pip
   - sudo apt-get install python-pip
   - pip3 install grpcio protobuf pyyaml
@@ -19,7 +18,7 @@ script:
   - echo "test python2"
   - python2.7 --version
   - echo "run py2"
-  - python py2.py
+  - python2.7 py2.py
   - echo "run py3"
   - python py3.py
   
