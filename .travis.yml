@@ -1,0 +1,22 @@
+sudo: false
+
+language: go
+
+go:
+  - 1.10.1
+
+before_install:
+  - pip3 install grpcio protobuf pyyaml
+  - pip2 install grpcio protobuf pyyaml
+
+install: true
+script:
+  - echo "test python3"
+  - python3 --version
+  - echo "test python2"
+  - python --version
+  - echo "run py2"
+  - python py2.py
+  - echo "run py3"
+  - python py3.py
+  
