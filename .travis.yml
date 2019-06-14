@@ -17,7 +17,7 @@ script:
   - echo "test python3"
   - python3 --version
   - echo "test python2"
-  - python --version
+  - python2.7 --version
   - echo "run py2"
   - python py2.py
   - echo "run py3"
