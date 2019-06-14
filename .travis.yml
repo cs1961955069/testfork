@@ -6,6 +6,7 @@ go:
   - 1.10.1
 
 before_install:
+  - pyenv local 3.6 2.7
   - python-pip3 install grpcio protobuf pyyaml
   - pip2 install grpcio protobuf pyyaml
 
